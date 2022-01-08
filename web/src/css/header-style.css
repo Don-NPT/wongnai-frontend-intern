@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+* {
+    font-family: 'Prompt', sans-serif;
+}
+
+h1 {  
+    font-size: 50px;
+    color: #339fdd;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    color: #cccccc;
+}
+
+.searchbox {
+    width: 40rem;
+    height: 2rem;
+    text-align: center;
+    color: #cccccc;
+    font-size: 1rem;
+    border-color: #cccccc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+}
+
+.searchbox:focus {
+    outline: none;
+    border-color: #339fdd;
+}
