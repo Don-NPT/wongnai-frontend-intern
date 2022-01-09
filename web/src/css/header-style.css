@@ -40,6 +40,7 @@ form {
     width: 40rem;
     justify-content: center;
     margin: 3rem auto;
+    overflow: hidden;
 }
 
 .trip-title a {
@@ -57,10 +58,24 @@ form {
 
 .trip-tags {
     font-size: 12px;
+    color: #555;
 }
 
-.trip-tags-list {
+ul {
+    list-style: none;
+    display: inline;
+    padding-left: 8px;
+}
+
+ul li {
+    display: inline;
+    margin-right: 5px;
+}
+
+a.trip-tags-list {
+    color: #555;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .big-img {
