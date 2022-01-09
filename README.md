@@ -22,4 +22,4 @@ All of them can be run by "npm start"
 This is the initial appearance of the webpage.<br /><br />
 
 ![image](https://user-images.githubusercontent.com/81351757/148670386-712e889e-625c-4b3e-af2d-0237e40bf68d.png)<br />
-After user types a keyword, the result will appear.
+After user types a keyword, the results will appear.<br /><br />
