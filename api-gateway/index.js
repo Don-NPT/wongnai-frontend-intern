@@ -1,7 +1,9 @@
 const express = require('express');
-// const request = require('request-promise-native');
 const app = express();
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+var cors = require('cors');
+
+app.use(cors());
 
 app.get('/', function (req, res) {
     res.send("Hello api-gateway");
