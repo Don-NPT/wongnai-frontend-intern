@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import Axios from 'axios';
 import '../css/header-style.css'
 
-function Header() {
+function Home() {
     const [tripList, getTripList] = useState([]);
     const [query, setQuery] = useState("");
 
+    // use Axios to get response from api-gateway server
     const search = () => {
         Axios.get(`http://localhost:3030/api/trips?keyword=${query}`).then((res) => {
             if(res.status === 200) {
@@ -30,13 +31,14 @@ function Header() {
                     type="search"
                     placeholder="หาที่เที่ยวแล้วไปกัน..."
                     onChange={(event) => { setQuery(event.target.value); }}
-                    onKeyPress={search}
+                    onKeyPress={search} // search when key pressed
                     value={query}
                 ></input>
             </form>
 
             <div>
-                
+
+                {/* Map search results into the webpage*/}
                 {tripList.map((trip, index) => {
                     return (
                         <div className='trip-list'>
@@ -50,6 +52,7 @@ function Header() {
                                     tripList.map((tag, id) => {
                                         return (
                                             <li>
+                                                {/* When click down the mouse, set the tag as query. And when release, search by that query */}
                                                 <a className='trip-tags-list' onMouseDown={() => setQuery(tripList[index].tags[id])} onClick={search}>{tripList[index].tags[id]}</a>
                                             </li>
                                     )})
@@ -70,4 +73,4 @@ function Header() {
     );
 }
 
-export default Header;
+export default Home;
