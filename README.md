@@ -1,9 +1,9 @@
-From Napat Sutthiwong
+#From Napat Sutthiwong
 
-This project is for Wongnai frontend assignment for interns
-In order to run this project, you need to run 3 things: json-server, api-gateway server (nodejs), and React app
+###This project is my frontend assignment from LINE MAN Wongnai.
+In order to run this project, you need to run 3 things: json-server, api-gateway server (nodejs), and React app.
 
-The modules needed is already include in the package's dependencies
+The modules needed is already include in the package's dependencies,
 but for convenience, I'll put them here as well.
 
 json-server
@@ -17,4 +17,4 @@ React app
 
 All of them can be run by "npm start"
 
-Heres are the snapshots of the website:
+###Heres are the snapshots of the website:
