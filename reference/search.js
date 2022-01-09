@@ -7,13 +7,13 @@ function Search() {
     const [searchTerm, setSearchterm] = useState("");
 
     const search = () => {
-        Axios.get('http://localhost:3030/search').then((response) => {
-            if (response.data.message) {
-                console.log(response.data.message);
-                setProductList(response.data.message);
+        Axios.get('http://localhost:3030/search').then((res) => {
+            if (res.data.message) {
+                console.log(res.data.message);
+                setProductList(res.data.message);
             } else {
-                console.log(response.data);
-                setProductList(response.data);
+                console.log(res.data);
+                setProductList(res.data);
             }
         });
     };

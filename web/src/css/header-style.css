@@ -2,6 +2,8 @@
 
 * {
     font-family: 'Prompt', sans-serif;
+    width: 100%;
+    margin: 0;
 }
 
 h1 {  
@@ -13,7 +15,7 @@ h1 {
 
 form {
     text-align: center;
-    color: #cccccc;
+    margin: 2rem 0;
 }
 
 .searchbox {
@@ -32,4 +34,46 @@ form {
 .searchbox:focus {
     outline: none;
     border-color: #339fdd;
+}
+
+.trip-list {
+    width: 40rem;
+    justify-content: center;
+    margin: 3rem auto;
+}
+
+.trip-title a {
+    text-decoration: none;
+    color: #000;
+}
+
+.trip-description {
+    color: #555;
+}
+
+.trip-description a {
+    color: #339fdd;
+}
+
+.trip-tags {
+    font-size: 12px;
+}
+
+.trip-tags-list {
+    text-decoration: underline;
+}
+
+.big-img {
+    width: 13rem;
+    height: 17rem;
+    float: left;
+    margin-right: 2rem;
+    border-radius: 1rem;
+}
+
+.small-img {
+    width: 7rem;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
 }
